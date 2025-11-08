@@ -5,7 +5,7 @@ const normalizedBase =
   RAW_BASE && RAW_BASE !== "undefined" ? RAW_BASE.replace(/\/$/, "") : undefined;
 
 const axiosInstance = axios.create({
-  baseURL: normalizedBase || "http://localhost:8080/api",
+  baseURL: normalizedBase || "https://praveesha.dev/api",
   timeout: 150000, // Increased timeout for backend API calls
   headers: {
     "Content-Type": "application/json",

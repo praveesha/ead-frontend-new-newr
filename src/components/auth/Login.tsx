@@ -82,7 +82,7 @@ export default function Login({ onSwitchToSignup }: LoginProps) {
             {/* Email Input */}
             <div>
               <label
-                htmlFor="email"
+                htmlFor="login-email"
                 className="block text-sm font-medium text-text-secondary mb-2"
               >
                 Email Address
@@ -104,7 +104,7 @@ export default function Login({ onSwitchToSignup }: LoginProps) {
                   </svg>
                 </div>
                 <input
-                  id="email"
+                  id="login-email"
                   name="email"
                   type="email"
                   autoComplete="email"
@@ -130,7 +130,7 @@ export default function Login({ onSwitchToSignup }: LoginProps) {
             {/* Password Input */}
             <div>
               <label
-                htmlFor="password"
+                htmlFor="login-password"
                 className="block text-sm font-medium text-text-secondary mb-2"
               >
                 Password
@@ -152,7 +152,7 @@ export default function Login({ onSwitchToSignup }: LoginProps) {
                   </svg>
                 </div>
                 <input
-                  id="password"
+                  id="login-password"
                   name="password"
                   type={showPassword ? "text" : "password"}
                   autoComplete="current-password"
