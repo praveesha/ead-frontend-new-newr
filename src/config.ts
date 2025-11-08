@@ -1,5 +1,5 @@
 // Centralized API base helper — reads Vite env var and provides a small helper
-export const API_BASE = (import.meta.env.VITE_BACKEND_URL as string) || 'http://localhost:8080/api/';
+export const API_BASE = (import.meta.env.VITE_BACKEND_URL as string) || "https://praveesha.dev/api";
 
 /** Build an absolute API URL from a path segment. Ensures single slashes. */
 export function api(path: string) {
