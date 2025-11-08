@@ -1,0 +1,17 @@
+/* Hide calendar icon (Chrome, Edge, Opera) */
+input[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+  display: none;
+  pointer-events: none;
+}
+
+/* Remove inner padding/extra UI */
+input[type="date"] {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+/* Optional Firefox (makes it look like plain text field) */
+input[type="date"] {
+  -moz-appearance: textfield;
+}

@@ -1,0 +1,125 @@
+@import "tailwindcss";
+
+@theme {
+  --color-*: initial;
+
+  --color-primary: #D60507;
+  --color-primary-dark: #B91C1C;
+  --color-primary-light: #EF4444;
+
+  --color-bg-header: #020202;
+  --color-bg-primary: #171717;
+  --color-bg-secondary: #272727;
+  --color-bg-tertiary: #4E4E4F;
+  --color-bg-footer: #020202;
+
+  --color-text-primary: #FFFFFF;
+  --color-text-secondary: #D4D4D8;
+  --color-text-tertiary: #A1A1AA;
+  --color-text-muted: #71717A;
+
+  --color-border-primary: rgb(212 212 216 / 0.2);
+  --color-border-secondary: rgb(161 161 170 / 0.15);
+  --color-border-tertiary: rgb(113 113 122 / 0.1);
+  --color-border-subtle: rgb(82 82 91 / 0.08);
+  --color-border-strong: rgb(228 228 231 / 0.3);
+
+  --color-hover: #B91C1C;
+  --color-hover-light: #DC2626;
+  --color-hover-bg: rgb(214 5 7 / 0.1);
+  --color-hover-border: rgb(212 212 216 / 0.3);
+
+  --color-focus-ring: rgb(214 5 7 / 0.5);
+  --color-focus-border: rgb(212 212 216 / 0.4);
+
+  --color-success: oklch(62.7% 0.194 149.214);
+  --color-primary: oklch(57.7% 0.245 27.325);
+
+  --color-success: #16a34a;
+  --color-bg-card: #222326;
+  --color-white: #FFFFFF;
+}
+
+/* Custom animations for Our Services Banner */
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin-reverse-slow {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 20s linear infinite;
+}
+
+.animate-spin-reverse-slow {
+  animation: spin-reverse-slow 15s linear infinite;
+}
+
+.animate-fade-in {
+  animation: fade-in 0.3s ease-out;
+}
+
+/* Light theme overrides - applied when .theme-light is on the html element */
+.theme-light {
+  --color-primary: #D60507;
+  --color-primary-dark: #B91C1C;
+  --color-primary-light: #EF4444;
+
+  --color-bg-header: #FFFFFF;
+  --color-bg-primary: #F7F7F8;
+  --color-bg-secondary: #F1F5F9;
+  --color-bg-tertiary: #E6E6E6;
+  --color-bg-footer: #FFFFFF;
+
+  --color-text-primary: #000000;
+  --color-text-secondary: #334155;
+  --color-text-tertiary: #475569;
+  --color-text-muted: #64748B;
+
+  --color-border-primary: rgba(15, 23, 36, 0.08);
+  --color-border-secondary: rgba(15, 23, 36, 0.06);
+  --color-border-tertiary: rgba(15, 23, 36, 0.04);
+  --color-border-subtle: rgba(15, 23, 36, 0.03);
+  --color-border-strong: rgba(15, 23, 36, 0.06);
+
+  --color-hover: #B91C1C;
+  --color-hover-light: #DC2626;
+  --color-hover-bg: rgba(214, 5, 7, 0.07);
+  --color-hover-border: rgba(15, 23, 36, 0.08);
+
+  --color-focus-ring: rgba(214, 5, 7, 0.15);
+  --color-focus-border: rgba(15, 23, 36, 0.1);
+
+  --color-success: oklch(62.7% 0.194 149.214);
+  --color-primary: oklch(57.7% 0.245 27.325);
+
+  --color-bg-card: #FFFFFF;
+  --color-white: #FFFFFF;
+}
+
